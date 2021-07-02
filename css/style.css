@@ -1,0 +1,78 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+  background: url("https://scrimba.com/blobs/sha1:31a52c065c4616d37388f3bfef788ebad1ee8644.png");
+  color: #ffffff;
+  background-size: cover;
+  font-weight: bold;
+  text-align: center;
+}
+
+.heading {
+  margin-top: 2rem;
+  color: goldenrod;
+  font-size: 42px;
+}
+
+.flex-blackjack-row-1 div {
+  /* border: 1px solid black; */
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+  height: 600px;
+}
+
+.flex-blackjack-row-1 img {
+  width: 25%;
+  padding: 10px;
+}
+
+.flex-blackjack-row-2 button {
+  /* border: 1px solid black; */
+  padding: 10px;
+}
+
+.flex-blackjack-row-2 div {
+  /* border: 1px solid black; */
+  padding: 10px;
+}
+
+table,
+th,
+td {
+  padding: 5px;
+  border: 1px solid white;
+  
+}
+
+.container-5 {
+  /* border: 1px solid black; */
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+.flex-blackjack-row-1,
+.flex-blackjack-row-2,
+.flex-blackjack-row-3 {
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  /* border: 1px solid black; */
+}
+
+#blackjack-result{
+  font-style: italic;
+}
+
+@media screen and (max-width: 480px) {
+  .flex-blackjack-row-1 {
+    flex-direction: column;
+  }
+  .container-5 {
+    width: 100%;
+  }
+  .flex-blackjack-row-1 {
+    height: 60vh;
+  }
+}
